@@ -5,7 +5,7 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 export const routes: Routes = [
   { path: '', component: AppComponent },
-  { path: '/subpasta', loadChildren: () => import('./subpasta/subpasta.module').then( m => m.SubpastaModule) },
+  { path: 'subpasta', loadChildren: () => import('./subpasta/subpasta.module').then( m => m.SubpastaModule) },
 ];
 
 @NgModule({
